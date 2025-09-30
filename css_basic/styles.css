@@ -1,4 +1,153 @@
 /* Flexbox layout for positioning */
+/* Custom Styling - Colors, Backgrounds, Borders */
+
+/* Logo styling */
+.logo {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #ff6b35;
+}
+
+/* Header enhancements */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: rgba(255,255,255,0.2);
+    text-decoration: none;
+}
+
+/* Article styling */
+article {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 10px;
+}
+
+article h2 {
+    color: #333;
+    border-bottom: 3px solid #ff6b35;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+article p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Aside styling */
+aside {
+    background: #f8f9fa;
+    border-left: 5px solid #667eea;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 10px;
+}
+
+aside h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+aside li:before {
+    content: "▸";
+    color: #ff6b35;
+    margin-right: 10px;
+}
+
+/* Footer styling */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Video styling */
+video {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 20px 0;
+}
+
+/* Twitter embed styling */
+.twitter-tweet {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Body background */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Main content area */
+main {
+    background: transparent;
+}
+
+/* Responsive enhancements */
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    article, aside {
+        padding: 20px;
+        margin: 5px;
+    }
+}
 body {
     display: flex;
     flex-direction: column;
